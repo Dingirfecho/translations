@@ -895,3 +895,69 @@ main { position: relative; }
   .prayer-head h3 { font-size: 26px; }
   .prayer-stanza { padding-left: 14px; }
 }
+
+/* ============================================================
+   LINE OF EMBODIMENTS — full per-prayer lineage tables
+   ============================================================ */
+.embodiment-tables-wrap {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.embodiment-table-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 28px 26px 20px;
+  box-shadow: var(--shadow);
+}
+
+.et-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.et-sub {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-faint);
+  margin: 0 0 18px;
+}
+
+.embodiment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.embodiment-table tr { border-top: 1px dotted var(--rule); }
+.embodiment-table tr:first-child { border-top: none; }
+.embodiment-table td { padding: 9px 4px; vertical-align: top; }
+.et-num {
+  width: 26px;
+  color: var(--gold);
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: right;
+  padding-right: 10px !important;
+}
+.et-name {
+  display: block;
+  color: var(--maroon);
+  font-weight: 600;
+}
+.et-epithet {
+  display: block;
+  color: var(--ink-faint);
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 1px;
+}
+
+@media (max-width: 900px) {
+  .embodiment-tables-wrap { grid-template-columns: 1fr; }
+}
