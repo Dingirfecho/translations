@@ -961,3 +961,27 @@ main { position: relative; }
 @media (max-width: 900px) {
   .embodiment-tables-wrap { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   IN-PROGRESS PROGRESS CARD (Mipham Rinpoche) + volumes-note
+   ============================================================ */
+.complete-badge.in-progress {
+  color: var(--maroon);
+  border-color: var(--maroon);
+  background: rgba(107, 33, 23, 0.05);
+}
+
+.vol-grid-27 { grid-template-columns: repeat(9, 1fr); }
+@media (max-width: 980px) {
+  .vol-grid-27 { grid-template-columns: repeat(7, 1fr); }
+}
+
+.volumes-note {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink-faint);
+  text-align: center;
+  line-height: 1.6;
+}
